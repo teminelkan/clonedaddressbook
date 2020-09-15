@@ -36,7 +36,7 @@ System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 		//System.setProperty("C:/Program Files/Google/Chrome/Application/chrome.exe");
 		//driver = new ChromeDriver();
 		driver.manage().window().maximize();
-	    driver.get("http://10.216.53.67:8080/addressbook/");
+	    driver.get("http://webclientans:8080/addressbook/");
 		}
    @Test
   public void verifyaddbook() {
