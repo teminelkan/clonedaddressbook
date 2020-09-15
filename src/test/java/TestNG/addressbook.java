@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class addressbook {
-	WebDriver driver;
+	//WebDriver driver;
 	@BeforeMethod
 	public void launch() {
 		ChromeOptions options = new ChromeOptions();
