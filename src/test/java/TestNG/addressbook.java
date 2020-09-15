@@ -13,8 +13,19 @@ public class addressbook {
 	WebDriver driver;
 	@BeforeMethod
 	public void launch() {
+		ChromeOptions options = new ChromeOptions();
+if(System.getProperty("os.name").equals("Windows Server 2016")){
+    File ChromeExePath =new File("C:/Program Files/Google/Chrome/Application/chrome.exe");
+    if (ChromeExePath.exists()){
+        options.setBinary(ChromeExePath);
+    }
+}
+
+ChromeDriver driver = new ChromeDriver(options);
+		
+		
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-		driver = new ChromeDriver();
+		//driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	    driver.get("http://10.216.53.67:8080/addressbook/");
 		}
