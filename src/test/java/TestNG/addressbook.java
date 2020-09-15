@@ -23,10 +23,17 @@ public class addressbook {
 
 //ChromeDriver driver = new ChromeDriver(options);
 		
-		
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		ChromeOptions chromeOptions= new ChromeOptions();
+chromeOptions.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
+System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+
+//ChromeDriver 
+		driver = new ChromeDriver(chromeOptions);
+//driver.get("http://newtours.demoaut.com/");
+
+		//		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		//System.setProperty("C:/Program Files/Google/Chrome/Application/chrome.exe");
-		driver = new ChromeDriver();
+		//driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	    driver.get("http://10.216.53.67:8080/addressbook/");
 		}
