@@ -24,7 +24,7 @@ if(System.getProperty("os.name").equals("Windows Server 2016")){
 ChromeDriver driver = new ChromeDriver(options);
 		
 		
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		//driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	    driver.get("http://10.216.53.67:8080/addressbook/");
