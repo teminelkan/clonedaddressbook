@@ -42,10 +42,10 @@ System.setProperty("webdriver.chrome.driver","chromedriver.exe");
   public void verifyaddbook() {
 	   driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 	   driver.findElement(By.xpath("//div[@class='v-button v-widget']")).click();
-	   driver.findElement(By.id("gwt-uid-5")).sendKeys("Testing");
-	   driver.findElement(By.id("gwt-uid-7")).sendKeys("Selenium");
+	   driver.findElement(By.id("gwt-uid-5")).sendKeys("PreTesting");
+	   driver.findElement(By.id("gwt-uid-7")).sendKeys("DouSelenium");
 	   driver.findElement(By.id("gwt-uid-9")).sendKeys("9849087272");
-	   driver.findElement(By.id("gwt-uid-11")).sendKeys("Selenium@gmail.com");
+	   driver.findElement(By.id("gwt-uid-11")).sendKeys("Selenium2000@gmail.com");
 	   driver.findElement(By.id("gwt-uid-13")).sendKeys("01/11/1985");
 	   driver.findElement(By.xpath("//div[@class='v-button v-widget primary v-button-primary']")).click();
    }
