@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -32,8 +32,8 @@ System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 //ChromeDriver 
 		driver = new ChromeDriver(chromeOptions);
 //driver.get("http://newtours.demoaut.com/");
-System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
-		FirefoxDriver driver = new FirefoxDriver();
+//System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+		//FirefoxDriver driver = new FirefoxDriver();
 		//driver.manage().window().maximize();
 		//driver.get("http://10.216.53.67:8080/addressbook/");
 		//		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
@@ -41,7 +41,7 @@ System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
 		//driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	    driver.get("http://webclientans:8080/addressbook/");
-		 Thread.sleep(2000);
+		//Thread.sleep(2000);
 		}
    @Test
   public void verifyaddbook() {
