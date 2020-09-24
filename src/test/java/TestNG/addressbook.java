@@ -41,11 +41,11 @@ System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
 		//driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	    driver.get("http://webclientans:8080/addressbook/");
+		 Thread.sleep(2000);
 		}
    @Test
   public void verifyaddbook() {
 	   driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-	   Thread.sleep(2000);
 	   driver.findElement(By.xpath("//div[@class='v-button v-widget']")).click();
 	   driver.findElement(By.id("gwt-uid-5")).sendKeys("Testing");
 	   driver.findElement(By.id("gwt-uid-7")).sendKeys("Selenium");
