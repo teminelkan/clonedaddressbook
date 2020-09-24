@@ -33,7 +33,7 @@ System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 		driver = new ChromeDriver(chromeOptions);
 //driver.get("http://newtours.demoaut.com/");
 System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
-		FirefoxDriver driver = new FirefoxDriver();
+		FirefoxDriver drivers = new FirefoxDriver();
 		//driver.manage().window().maximize();
 		//driver.get("http://10.216.53.67:8080/addressbook/");
 		//		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
@@ -52,6 +52,17 @@ System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
 	   driver.findElement(By.id("gwt-uid-11")).sendKeys("Selenium2000@gmail.com");
 	   driver.findElement(By.id("gwt-uid-13")).sendKeys("01/11/1985");
 	   driver.findElement(By.xpath("//div[@class='v-button v-widget primary v-button-primary']")).click();
+   }
+	
+	public void verifyaddbooks() {
+	   drivers.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+	   drivers.findElement(By.xpath("//div[@class='v-button v-widget']")).click();
+	   drivers.findElement(By.id("gwt-uid-5")).sendKeys("Testings");
+	   drivers.findElement(By.id("gwt-uid-7")).sendKeys("Seleniums");
+	   drivers.findElement(By.id("gwt-uid-9")).sendKeys("9849087272s");
+	   drivers.findElement(By.id("gwt-uid-11")).sendKeys("Selenium2000s@gmail.com");
+	   drivers.findElement(By.id("gwt-uid-13")).sendKeys("01/11/1985");
+	   drivers.findElement(By.xpath("//div[@class='v-button v-widget primary v-button-primary']")).click();
    }
    @AfterMethod
    public void close() {
