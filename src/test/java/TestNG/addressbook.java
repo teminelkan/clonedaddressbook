@@ -40,7 +40,8 @@ System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 		//System.setProperty("C:/Program Files/Google/Chrome/Application/chrome.exe");
 		//driver = new ChromeDriver();
 		driver.manage().window().maximize();
-	    driver.get("http://webclientans:8080/addressbook/");
+	   // driver.get("http://webclientans:8080/addressbook/");
+		driver.get("http://10.216.53.87:8080/addressbook/");
 		//Thread.sleep(2000);
 		}
    @Test
