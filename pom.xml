@@ -40,4 +40,11 @@
   </plugin>
   </plugins>
   </build>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>nexus</id>
+      <name>nexus</name>
+      <url>http://34.204.5.155:8081/repository/addrepo/</url>
+    </snapshotRepository>
+  </distributionManagement>
  </project>
